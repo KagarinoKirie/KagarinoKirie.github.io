@@ -1,0 +1,91 @@
+﻿.container {
+    margin: 50px;
+    padding: 100px;
+    display: flex;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
+.box__item {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background: black;
+}
+.box-red {
+    top: 200px;
+    left: 220px;
+    position: absolute;
+    background: red;
+}
+.box-green {
+    top: 220px;
+    left: 300px;
+    position: absolute;
+    background: #54ff00;
+}
+.box-blue {
+    top: 300px;
+    left: 215px;
+    position: absolute;
+    background: blue;
+}
+.box-yellow {
+    top: 320px;
+    left: 310px;
+    position: absolute;
+    background: yellow;
+}
+.box__item-cross {
+    border-radius: 50%;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #2c3e50;
+    border: 1px solid grey;
+    transform: unset;
+    top: 60%;
+    left: 60%;
+    transition: transform .5s;
+}
+
+    .box__item-cross:hover {
+        transform: rotate(180deg);
+    }
+
+    .box__item-cross span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        width: 20px;
+        height: 3px;
+        background: black;
+    }
+
+        .box__item-cross span:first-child {
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+
+        .box__item-cross span:last-child {
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+.box-red:hover {
+    z-index: 2;
+}
+
+.box-green:hover {
+    z-index: 2;
+}
+
+.box-blue:hover {
+    z-index: 2;
+}
+
+.box-yellow:hover {
+    z-index: 2;
+} 
